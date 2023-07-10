@@ -35,6 +35,8 @@ bytebuffer_t *bytebuffer_create(uint64_t size)
 
 void bytebuffer_delete(bytebuffer_t *buffer)
 {
+    if (buffer == NULL)
+        return;
     free(buffer->bytes);
     free(buffer);
 }

@@ -27,6 +27,7 @@ int bytebuffer_resize(bytebuffer_t *buffer, size_t size)
     }
     buffer->bytes = temp;
     buffer->capacity = size;
-    buffer->size = size > buffer->capacity ? buffer->capacity : size;
+    buffer->size = buffer->size > buffer->capacity ?
+                                                buffer->capacity : buffer->size;
     return 0;
 }
