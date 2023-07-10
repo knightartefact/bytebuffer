@@ -11,6 +11,8 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#define EXPAND_RATIO 1.61803398875
+
 typedef struct bytebuffer_s bytebuffer_t;
 
 struct bytebuffer_s {
