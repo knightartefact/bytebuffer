@@ -25,11 +25,14 @@ bytebuffer_t *bytebuffer_create(uint64_t size);
 void bytebuffer_delete(bytebuffer_t *buffer);
 
 int bytebuffer_write(bytebuffer_t *buffer, const void *data, size_t size);
+int bytebuffer_write_byte(bytebuffer_t *buffer, uint8_t byte);
 
 int bytebuffer_resize(bytebuffer_t *buffer, size_t size);
 
 uint64_t bytebuffer_size(bytebuffer_t *buffer);
 uint64_t bytebuffer_capacity(bytebuffer_t *buffer);
 uint64_t bytebuffer_free_space(bytebuffer_t *buffer);
+
+void bytebuffer_print(bytebuffer_t *buffer, int mode);
 
 #endif /* !BYTEBUFFER_H_ */
