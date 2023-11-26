@@ -25,6 +25,7 @@ bytebuffer_t *bytebuffer_create(uint64_t size);
 void bytebuffer_delete(bytebuffer_t *buffer);
 
 int bytebuffer_write(bytebuffer_t *buffer, const void *data, size_t size);
+int bytebuffer_read(bytebuffer_t *buffer, void *data, size_t size);
 
 int bytebuffer_resize(bytebuffer_t *buffer, size_t size);
 

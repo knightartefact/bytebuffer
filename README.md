@@ -1,6 +1,6 @@
 # Bytebuffer
 
-A simple byte buffer library in **C** with basic functionnality
+A simple byte buffer library in **C** with basic functionality
 
 ## Building
 
